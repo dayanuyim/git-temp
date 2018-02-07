@@ -1,0 +1,306 @@
+footer{
+  color: white;
+  background: black;
+  text-align: center;
+}
+
+header.title h1{
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+h1{
+  color: white;
+  background: black;
+}
+
+h2{
+  color: white;
+  background: darkgray;
+}
+
+h4 {
+  color: dimgray;
+  background: whitesmoke;
+  margin-left: 1em;
+}
+
+h4 + div{
+  margin-left: 1em;
+}
+
+.scrollbar:hover{
+  overflow: auto;
+}
+
+.scrollbar{
+  overflow: hidden;
+}
+
+.scrollbar::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+    width: 12px;
+    height: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+    background-color: #555;
+    border: 2px solid #666;
+}
+
+body {
+  overflow: hidden;
+}
+
+.artical {
+  display: block;
+
+  height: calc(93vh);
+  margin-left: 22%;
+  text-align: left;
+}
+
+.nav {
+  float: left;
+  width: 20%;
+  height: calc(93vh - 2px);
+  background: none;
+  text-align: left;
+}
+
+.nav ul:first-child {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-left: 1.5em;
+}
+
+.nav ul {
+  list-style-type: decimal;
+  padding-left: 1em;
+  color: brown;
+  background-color: rgba(70, 130, 180, 0.2); /*steelblue*/
+}
+
+.nav ul a {
+  text-decoration: none;
+  color: brown;
+}
+
+.nav>ul>li>a {
+  font-weight: bold;
+}
+
+/*
+.nav-1 {
+  background: midnightblue;
+}
+
+.nav-1 a{
+  padding: 1px;
+  color: white;
+}
+
+.nav-2 {
+  background: cornflowerblue;
+}
+
+.nav-2 a{
+  padding: 1px;
+  color: white;
+}
+
+.nav-3 {
+  background: steelblue;
+}
+
+.nav-3 a{
+  padding: 1px;
+  color: white;
+}
+*/
+
+
+@media all and (min-width: 768px) {
+  /*
+  .nav {
+    text-align:left;
+    -webkit-flex: 1 auto;
+    flex:1 auto;
+    -webkit-order:1;
+    order:1;
+  }
+  .artical {
+    -webkit-flex:5 0px;
+    flex:5 0px;
+    -webkit-order:2;
+    order:2;
+  }
+  footer {
+    -webkit-order:3;
+    order:3;
+  }
+  */
+}
+
+/*
+section:hover {
+  background: lightgray;
+}
+*/
+
+dl.inline-flex {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: visible;
+}
+
+dl.inline-flex dt {
+  flex: 0 0 20%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+dl.inline-flex dd {
+  flex:0 0 80%;
+  margin-left: auto;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+dt, dd {
+  box-sizing: border-box;
+  padding: 3px 5px;
+  margin: 1px 0px;
+}
+
+dt {
+  font-weight: bold;
+  color: floralwhite;
+  background: steelblue;
+  border-radius: 4px;
+  text-align: right;
+}
+
+dd {
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  color: floralwhite;
+  background: steelblue;
+  box-sizing: border-box;
+  padding: 3px 5px;
+}
+
+table {
+  background: aliceblue;
+  margin-left: 1em;
+  padding: 2px;
+}
+
+.fs-root {
+  padding: 2px;
+  background: lightgoldenrodyellow;
+}
+
+.cve {
+  margin-top: 5px;
+}
+
+.cve-id{
+  display: inline-block;
+  width: 9em;
+  text-align: center;
+  font-weight: bold;
+  background: gainsboro;
+}
+
+.cve-id a{
+  color: dimgray;
+  text-decoration: none;
+}
+.cve-id a:hover{
+  color: black;
+}
+
+.cve-cvss {
+  display: inline-block;
+  width: 2em;
+  text-align: center;
+}
+
+/* low severity */
+.cve-cvss-1, .cve-cvss-2, .cve-cvss-3 {
+  color: aliceblue;
+  background: darkseagreen;
+}
+
+/* midium severity */
+.cve-cvss-4, .cve-cvss-5, .cve-cvss-6 {
+  color: aliceblue;
+  background: cornflowerblue;
+}
+
+/* high severity */
+.cve-cvss-7, .cve-cvss-8 {
+  color: aliceblue;
+  background: orange;
+}
+
+/* critical severity */
+.cve-cvss-9, .cve-cvss-10 {
+  color: aliceblue;
+  background: darkred;
+}
+
+.tag {
+  border-radius: 4px;
+  padding: 2px;
+  margin: 1px 2px;
+}
+
+.filepath a{
+  color: black;
+  text-decoration: none;
+}
+
+.filepath a:hover{
+  color: blue;
+}
+
+.filetype {
+  background: lightsteelblue;
+}
+
+.filepass {
+  background: indianred;
+}
+
+.suspicious-file {
+  background: pink !important;
+}
+
+.dep-path-file {
+  color: gray;
+  background: lightsteelblue;
+  margin: 2px 0px;
+  display: inline-block;
+}
+
+.dep-path-file a{
+  color: darkslategray;
+  text-decoration: none;
+}
